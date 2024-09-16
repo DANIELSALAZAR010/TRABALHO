@@ -1,0 +1,65 @@
+body {
+    font-family: georgia, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9b979bb8;
+}
+
+header {
+    background-color: #000000;
+    color:rgb(128,0,128);
+    padding: 25px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #000000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte em telas pequenas */
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    color: purple;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+/* Adiciona responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Altera a direção dos itens do menu para coluna em telas pequenas */
+        align-items: stretch; /* Faz com que os itens ocupem toda a largura disponível */
+    }
+
+    nav ul li {
+        width: 100%; /* Faz com que cada item ocupe toda a largura disponível */
+    }
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+
